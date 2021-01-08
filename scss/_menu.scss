@@ -10,7 +10,7 @@
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
-    background: white;
+    background: set-text-color($primary-color);
     @include easeOut;
   }
 
@@ -21,7 +21,7 @@
     .btn-line {
       // Line 1 - Rotate
       &:nth-child(1) {
-        background-color: orange;
+        background-color: set-text-color($primary-color);
         transform: rotate(45deg) translate(5px, 5px);
       }
       // Line 2 - Hide
@@ -30,7 +30,7 @@
       }
       // Line 3 - Rotate
       &:nth-child(3) {
-        background-color: orange;
+        background-color: set-text-color($primary-color);
         transform: rotate(-45deg) translate(7px, -6px);
       }
     }
@@ -114,7 +114,6 @@
     text-transform: uppercase;
     padding: 1rem 0;
     font-weight: 300;
-    color: white;
     text-decoration: none;
     @include easeOut;
     &:hover {
