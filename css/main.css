@@ -182,6 +182,12 @@ main {
     padding: 0.5rem;
     border-top: rgba(238, 206, 26, 0.25) 5px solid;
     border-bottom: #eece1a 5px solid; }
+    .about-info .job h3 {
+      text-decoration: underline; }
+    .about-info .job h4 {
+      margin: 0; }
+    .about-info .job h5 {
+      margin: 0; }
 
 .projects {
   display: grid;
