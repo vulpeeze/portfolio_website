@@ -111,6 +111,17 @@ main {
     padding: 0.5rem;
     border-top: rgba($secondary-color, 0.25) 5px solid;
     border-bottom: $secondary-color 5px solid;
+
+    h3 {
+      text-decoration: underline;
+    }
+
+    h4 {
+      margin: 0;
+    }
+    h5 {
+      margin: 0;
+    }
   }
 }
 
