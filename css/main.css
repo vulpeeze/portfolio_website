@@ -292,7 +292,9 @@ main {
   .projects {
     grid-template-columns: repeat(4, 1fr); } }
 
-@media screen and (mix-width: 769px) and (max-width: 1170px) {
+@media screen and (min-width: 769px) and (max-width: 1170px) {
+  .boxes div a {
+    font-size: 1.25rem; }
   grid-template-columns: repeat(3, 1fr); }
 
 @media screen and (max-width: 768px) {
@@ -323,6 +325,9 @@ main {
       height: 150px; }
   .about-info {
     grid-template-areas: "bioimage" "bio" "job1" "job2" "job3";
+    grid-template-columns: 1fr; }
+  .boxes {
+    grid-template-areas: "email" "tel" "soc1" "soc2";
     grid-template-columns: 1fr; }
   .projects {
     grid-template-columns: repeat(2, 1fr); } }
