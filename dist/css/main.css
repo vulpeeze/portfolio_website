@@ -205,23 +205,32 @@ main {
       transition: all 0.5s ease-out; }
 
 .boxes {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-areas: "email email email tel tel tel" ". soc1 . . soc2 .";
+  grid-gap: 1rem;
   margin-top: 1rem; }
   .boxes div {
     font-size: 2rem;
     border: 3px white solid;
     padding: 1.5rem 2.5rem;
-    margin-bottom: 3rem;
+    background: #515151;
+    border-top: rgba(238, 206, 26, 0.25) 5px solid;
+    border-bottom: #eece1a 5px solid;
     transition: all 0.5s ease-out; }
     .boxes div:hover {
-      padding: 0.5rem 1.5rem;
-      background: #eece1a;
+      background: #5e5e5e;
       color: #000; }
       .boxes div:hover span {
         color: #000; }
+  .boxes .contact-email {
+    grid-area: email; }
+  .boxes .contact-tel {
+    grid-area: tel; }
+  .boxes .contact-soc1 {
+    grid-area: soc1; }
+  .boxes .contact-soc2 {
+    grid-area: soc2; }
 
 .btn, .btn-dark, .btn-light {
   display: block;
@@ -246,7 +255,8 @@ main {
   border: 0;
   margin: 0.3rem;
   background-color: #654321;
-  color: white; }
+  color: white;
+  cursor: pointer; }
   .collapsible::after {
     content: "\02795";
     /* Unicode character for "plus" sign */
