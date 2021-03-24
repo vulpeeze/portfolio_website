@@ -7,6 +7,13 @@
 
 // Desktops & Laptops
 @include mediaLg {
+  .boxes {
+    div {
+      a {
+        font-size: 1.25rem;
+      }
+    }
+  }
   grid-template-columns: repeat(3, 1fr);
 }
 
@@ -57,6 +64,15 @@
       "job1"
       "job2"
       "job3";
+    grid-template-columns: 1fr;
+  }
+
+  .boxes {
+    grid-template-areas:
+      "email"
+      "tel"
+      "soc1"
+      "soc2";
     grid-template-columns: 1fr;
   }
 
